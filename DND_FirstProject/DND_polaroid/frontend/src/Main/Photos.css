@@ -1,0 +1,37 @@
+.Photos{
+    width: 100%;
+}
+
+.Photos-Grid{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+}
+
+.Photos-Grid li{
+    overflow: hidden;
+    width : 32%;
+}
+
+.Photos-photo{
+    width: 100%;
+}
+
+
+@media screen and (max-width : 100%){
+    .Photos-Grid li{
+        width :32%;
+    }
+}
+
+@media screen and (max-width : 1006px){
+    .Photos-Grid li{
+        width : 48%;
+    }
+}
+
+@media screen and (max-width : 665px){
+    .Photos-Grid li{
+        width : 100%;
+    }
+}

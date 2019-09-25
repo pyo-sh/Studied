@@ -1,0 +1,97 @@
+.Payment-overlay{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(100,100,100,0.16);
+}
+
+  .Payment-Modal{
+    position: fixed;
+    width: 400px;
+    z-index: 9000;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.16);
+    padding: 15px 5px;
+}
+
+.Payment-Modal .Payment-Title {
+    font-size: 20px;
+    margin : 10px 30px;
+}
+
+.Payment-Content{
+  margin: 10px auto;
+  width: 320px;
+  font-size : 12px;
+  padding : 7px;
+}
+
+.Payment-Content h4{
+  margin-bottom: 0px;
+}
+
+.Payment-Content ul{
+  margin: 2px;
+}
+
+.Payment-Content-Column{
+  display:flex;
+}
+
+.Paymeent-Contet-Column-Flim{
+  font-size: 14px;
+  font-weight:  1000;
+  color: rgb(82, 195, 181);
+  margin-right: 5px;
+  padding-bottom: 3px;
+}
+
+.Payment-Content .Payment-Content-Column p{
+  margin-right: 5px;
+  margin-top : 2px;
+  margin-bottom: 0px;
+}
+
+.Payment-Content .Payment-Content-Column:nth-child(2){
+  margin-bottom: 7px;
+}
+
+.Border{
+  border : 1px solid rgb(180, 180, 180);
+  border-radius: 3px;
+}
+
+.Payment-Button{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin : 10px 35px 10px 0;
+}
+
+.Payment-Button Button{
+  width: 70px;
+  height : 30px;
+  outline : none;
+  border-radius : 5px;
+  font-size : 13px;
+}
+
+.Payment-Button-Download{
+  color: white;
+  background : rgb(82, 195, 181);
+  border : none;
+  margin-right : 8px;
+}
+
+.Payment-Button-Cancle{
+  background : none;
+  border : 1px solid rgb(200, 200, 200);
+}

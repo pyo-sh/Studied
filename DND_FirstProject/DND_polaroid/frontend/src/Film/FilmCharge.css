@@ -1,0 +1,115 @@
+.Charge {
+    /* position: relative;
+    top : 50px; */
+    position : absolute;
+    top: 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 250px;
+}
+
+.Charge-Column{
+    display: flex;
+    flex-direction: column;
+}
+
+.Charge-Title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.Charge-Explanation{
+    margin-top : 24px;
+    margin-left : 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(100,100,100);
+}
+
+.Charge-Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border : 1px solid rgb(230, 230, 230);
+    border-radius: 7px;
+    padding: 35px;
+    margin-top : 30px;
+    box-shadow: 0 0 5px rgb(200, 200, 200);
+}
+
+.Charge-Contents{
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.Charge-Cotents-Column{
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.Icon-Film{
+    margin-right: 5px;
+}
+
+
+.Charge-Input-Count{
+    display: flex;
+    align-items: center;
+}
+
+.Charge-Input-Count p {
+    margin-top : 5px;
+    margin-bottom: 0;
+    margin-right : 5px;
+}
+
+.Charge-Input{
+    width: 250px;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    background: rgb(230,230,230);
+    border-radius: 55px;
+}
+
+.Charge-Button{
+    position: relative;
+    right: 0;
+    margin-left: 266px;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgb(82, 195, 181);
+    color: white;  
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    border : none;
+     outline : none;
+     margin-top : 5px;
+    margin-bottom: 10px;
+}
+
+.Film-Span{
+    display: flex;
+    justify-content: flex-end;
+    margin-top : 5px;
+}
+.Film-Span p{
+    display: inline;
+    color : rgb(82, 195, 181);
+    margin : 0 5px;
+}
+.Film-Agree{
+    display: flex;
+    justify-content: flex-end;
+    margin-top : 25px;
+}
+
+.Film-Agree input{
+    margin-top: 3px;
+    margin-right: 5px;
+}

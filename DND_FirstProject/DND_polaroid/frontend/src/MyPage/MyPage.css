@@ -1,0 +1,41 @@
+.MyPage{
+    margin-top : 50px;
+    margin-bottom : 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.MyPage-MyFilm{
+    width: 1070px;
+    margin : auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MyPage-Photos{
+    position: relative;
+    top : -1px;
+    width: 1070px;
+    margin : auto;
+    padding-top : 40px;
+    padding-left : 39px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 0 0px 10px 10px;
+    background :white;
+    box-shadow: 0 2px 5px rgb(180, 180, 180);
+}
+
+
+.MyPage-MenuBar{
+    width : 1070px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}

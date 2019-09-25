@@ -1,0 +1,45 @@
+.Benefit-Page{
+    justify-content: center; 
+    margin-bottom: 40px;
+}
+.Benefit-Button{   
+    display: flex;
+    text-align: center;
+    justify-content: flex-start; 
+}
+.Benefit-Button button{
+    width: 100px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+
+    background:none;
+    font-size: 20px;
+    font-weight: bold;
+    color : black;
+}
+.Benefit-Button .Benefit-Button-Selected{
+    color : rgb(82, 195, 181);
+}
+
+.Benefit-Chart{
+    width : 965px;
+    margin: 15px;
+    background: rgb(240, 240, 240);
+    padding: 30px 25px 25px 25px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(200, 200, 200);
+}
+
+.Benefit-Value{
+    margin: 15px;
+}
+.Benefit-Value div{
+    color: rgb(100, 100, 100);
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}

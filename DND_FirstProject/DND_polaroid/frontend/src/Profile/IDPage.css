@@ -1,0 +1,64 @@
+.IDPage{
+    margin-top : 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.IDPage-Profile{
+    position: relative;
+    left : 35px;
+    width: 1070px;
+    margin : auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IDPage-Photo{
+    position: relative;
+    width: 1070px;
+    margin : auto;
+    padding-top : 40px;
+    padding-left : 39px;
+    background :white;
+    border-radius: 10px;
+}
+
+.IDPage-Btn{
+    position: relative;
+    top : 28px;
+    left: -275px;
+    align-self: flex-start;
+    margin-top: 110px;
+
+}
+
+.IDPage-Follow{
+    width: 80px;
+    height: 30px;
+    border : none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    background: rgb(82, 195, 181);
+}
+
+.IDPage-Following{
+    width: 80px;
+    height: 30px;
+    background: rgb(230, 230, 230);
+    color: rgb(100,100,100);
+    border : none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.5s;
+}

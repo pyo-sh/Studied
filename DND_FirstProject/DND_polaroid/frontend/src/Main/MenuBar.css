@@ -1,0 +1,167 @@
+.Menu{
+    position: fixed;
+    top : 0;
+    left : 0;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width : 100%;
+    height: 55px;
+    align-items: center;
+    z-index : 9999;
+ 
+    box-shadow: 0px 0px 10px rgba(150,150,150, 0.5);
+
+}
+.Menu-First{
+    display:flex;
+    margin-left: 10px;
+}
+
+.Logo{
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    height: 45px;
+    width: auto;
+}
+
+.Menu-Title{
+    color : black;
+    margin-left: 55px;
+    font-weight: 800;
+}
+
+.Menu-Logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size : 30px;
+    font-weight: bold;
+}
+
+.Search-Form{
+    padding: 10px;
+    height: 40px;
+    background:  rgb(230,230,230);
+    display:flex;
+    align-items: center;
+    margin-left : 30px;
+    border-radius: 55px;
+}
+
+.Search-Form .Icon-Search{
+    margin : 5px 10px 5px 5px;
+    color: rgb(150,150,150);
+}
+
+.Search-Form .Icon-Fliter{
+    margin : 5px;
+    color:rgb(150,150,150);
+}
+
+.Search-Form .Search-Input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 30px;
+}
+
+.Menu-Item{
+    display: flex;
+    margin-right: 10px;
+    font-size : 13px;
+}
+
+.Menu-Category{
+    margin-top : 3px;
+    vertical-align: middle;
+}
+
+.Login-Btn {
+    margin-top : 2px;
+    font-size : 13px;
+    margin-left: 13px;
+    vertical-align: middle;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline:none;
+}
+
+.Sign-Btn {
+    height: 25px;
+    width: 75px;
+    margin-left: 13px;
+    background : white;
+    border: 1px solid rgb(180,180,180);
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(230,230,230);
+    outline:none;
+}
+
+#Upload{
+    background : rgb(82, 195, 181);
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+.Link{
+    color: black;
+}
+
+.Sub-Menu{
+  opacity: 0;
+  height: 0;
+  transition: 0.3s;
+  border: none;
+}
+
+.Sub-Menu .Sub-Item{
+    display: block;
+    height: 25px;
+    line-height: 1rem;
+    padding-top : 5px;
+    padding-left : 30px;
+    background: rgb(180,180,180);
+    color: white;
+}
+
+.Sub-Menu .Sub-Item:hover{
+    background: rgb(130,130,130);
+}
+
+.Menu-Item .Visible{
+    opacity: 1;
+    height: 75px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1100px){
+    .Login-Btn{
+        display: none;
+    }
+    .Sign-Btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .Search-Form{
+        border-radius: 50%;
+    }
+    .Search-Form .Search-Input{
+        display: none;
+    }
+    .Search-Form .Icon-Search{
+        margin: 0px;
+    }
+    .Search-Form .Icon-Fliter{
+        display: none;
+    }
+}

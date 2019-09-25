@@ -1,0 +1,152 @@
+.MyFavorite-Buttons{
+    position: relative;
+    z-index: 30;
+    width: 178px;
+    border-radius: 8px;
+    left: 495px;
+    top: -43px;
+}
+.MyFavorite-Fake-Button{
+    position: absolute;
+    width: 175px;
+    height: 45px;
+    
+    border: none;
+    outline: none;
+    background: none;
+    top: -45px;
+}
+#MyFavorite-Folders{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    max-height: 0;
+}
+
+/* MyFavorite-Folder-Open와 MyFavorite-Folder-Close는 겹치는 부분은 같이 바꿔줘야 한다. */
+.MyFavorite-Folder-Open{
+    overflow: hidden;
+}
+.MyFavorite-Buttons .MyFavorite-Folder-Open button{
+    padding: 0 26px;
+    height: 0px;
+    color: none;
+    font-size: 14px;
+    margin: 1px 0;
+    position: relative;
+    border: none;
+    outline: none;
+}
+.MyFavorite-Buttons .MyFavorite-Folder-Close button{
+    box-shadow: 0 5px 4px rgb(200, 200, 200);
+    padding: 16px 24px;
+    text-align: start;
+    transition: 0.3s;
+    font-size: 15px;
+    color : rgb(100, 100, 100);
+    background: rgb(240, 240, 240);
+    position: relative;
+    border: 1px solid rgb(200, 200, 200);
+    border-bottom: none;
+    border-top : none;
+    outline: none;
+}
+
+
+.MyFavorite-Buttons .MyFavorite-Folder-Close button:last-child{
+    border-bottom: 1px solid rgb(200, 200, 200);
+    border-radius: 0 0 5px 5px;
+}
+
+.MyFavorite-Folder-Close button:hover{
+    background: rgb(220, 220, 220);
+    font-weight: 700;
+}
+
+.MyFavorite-Window{
+    background: white;
+    position: relative;
+    top : -15px;
+}
+
+.MyFavorite-Files{
+    display: inline-block;
+}
+.MyFavorite-File{
+    margin: 15px;
+    font-size: 15px;
+}
+.MyFavorite-Window-Buttons{
+    position: relative;
+    height: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 39px;
+}
+
+.MyFavorite-Folder-AddBefore{
+    margin-left: 330px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: rgb(100, 100, 100);
+    background: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+.MyFavorite-Folder-Delete{
+    height: 35px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    color: rgb(100, 100, 100);
+    background: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+
+.MyFavorite-Add-Folder{
+    width: 260px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    color: rgb(100, 100, 100);
+    background: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+
+.MyFavorit-New-Folder{
+    border: none;
+    border-radius: 5px;
+    outline:none;
+    width: 175px;
+    height: 25px;
+    margin-left : 5px;
+    padding-left: 7px;
+}
+
+.MyFavorite-Confirm-Area{
+    right: 0;
+    margin-left : auto;
+}
+
+.MyFavorite-Cancel{
+    padding : 0;
+    margin-right: 8px;
+    background: none;
+    font-size: 13px;
+    color: gray;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.MyFavorite-Confirm{
+    padding : 0;
+    margin-right: 8px;
+    background: none;
+    color: rgb(82, 195, 181);
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

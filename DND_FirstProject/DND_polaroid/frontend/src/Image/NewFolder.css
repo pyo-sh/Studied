@@ -1,0 +1,34 @@
+.Add-Folder{
+    display: flex;
+}
+
+.New-Folder{
+    border: none;
+    outline:none;
+    width: 150px;
+}
+
+.Confirm-Area{
+    margin-left: 45px;
+}
+
+.Confirm{
+    background: none;
+    color: blue;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    outline: none;
+}
+
+.Cancel{
+    background: none;
+    background: none;
+    font-size: 15px;
+    color: gray;
+    cursor: pointer;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    outline: none;
+}

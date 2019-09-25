@@ -1,0 +1,76 @@
+.Profile-Grade{
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    background : rgb(230,230,230);
+    margin: 5px auto;
+    margin-bottom: 6px
+}
+
+.Grade-Modal-Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(100,100,100,0.16);
+  }
+
+.Grade-Modal{
+    width: 350px;
+    z-index: 9000;   /*div 의 창이 맨 앞으로 오게 ( 순서 1 )*/
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.16);
+    padding: 15px 5px;
+    position: absolute;
+}
+.Grade-Modal .Grade-Title{
+    margin-top: 10px;
+    margin-left: 21px;
+}
+
+.Grade-Content{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.Grade-Modal .Grade-Content-Column{
+    margin-bottom: 20px;
+    color: none;
+    border-radius: 3px;
+}
+
+.Grade-Content-Column h4{
+    display: inline;
+}
+
+.Grade-Modal .Grade-Button-Wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin : 18px 30px 0px 0;
+}
+
+.Grade-Modal .Grade-Button-Wrap Button{
+    width: 70px;
+    height : 30px;
+    outline : none;
+    border-radius : 5px;
+    font-size : 13px;
+}
+.Grade-Modal .Grade-Button-Wrap .Grade-Button-Confirm{
+    color: white;
+    background : rgb(82, 195, 181);
+    border : none;
+    margin-right : 8px;
+}
+.Grade-Modal .Grade-Button-Wrap .Grade-Button-Cancel{
+    background : none;
+    border : 1px solid rgb(200, 200, 200);
+}

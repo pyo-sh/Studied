@@ -1,0 +1,123 @@
+.ProfileSmall{
+    position: relative;
+    background : white;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding : 20px;
+    border : 1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    
+}
+
+.ProfileSmall:hover{
+    border : 1px solid rgb(100, 100, 100);
+    box-shadow: 0px 0px 10px rgb(200,200,200);
+}
+
+.ProfileSmall-Column{
+    display: flex;
+    position: relative;
+    width : 100%;
+}
+
+.ProfileSmall-ProfileImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ProfileSmall-ProfileImage img{    
+    width: 100px;
+    height: 100px;
+    text-align: center; 
+    top : 50%;
+}
+
+.ProfileSmall-Column .ProfileSmall-Info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top : 15px;
+    margin-left : 20px;
+    text-align: left;
+}
+
+.ProfileSmall-Info{
+    width: 65%;
+}
+
+.ProfileSmall-Info .Nickname{
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.ProfileSmall-Info .Id{
+    color : rgb(180, 180, 180);
+    font-size: 15px;
+    margin-top: 3px;
+    margin-left : 10px;
+}
+
+.ProfileSmall-Follow-Btn{
+    display: flex;
+    position: relative;
+    top : 13px;
+    cursor: pointer;
+    z-index: 9000;
+    outline: none;
+} 
+
+.ProfileSmall-Follow-Btn .Follow{
+    color: white;
+    background: rgb(82, 195, 181);
+    border : none;
+}
+
+.ProfileSmall-Follow-Btn button{
+    width: 100%;
+    background: rgb(230, 230, 230);
+    color: rgb(100,100,100);
+    height: 30px;
+    border : none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.ProfileSmall-Column:last-child{
+    justify-content: left;
+    margin-top : 15px;
+}
+
+.UserImage{
+    width: 32%;
+    padding-bottom: 25%; 
+    background-size: cover;
+    background-position: center;
+    margin-right: 2%;
+}
+
+.UserImage:nth-child(3){
+    margin-right: 0;
+}
+
+
+@media screen and (max-width : 800px){
+    .Profile-Small{
+        flex : 48%;
+    }
+}
+@media screen and (max-width : 600px){
+    .Profile-Small{
+        flex : 100%;
+    }
+}

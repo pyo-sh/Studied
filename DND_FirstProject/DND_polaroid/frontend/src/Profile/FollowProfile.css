@@ -1,0 +1,86 @@
+.FollowProfile{
+    width: 370px;
+    padding: 10px;
+    position: relative;
+    background : white; 
+}
+
+.FollowProfile:hover{
+    background: rgb(240, 240, 240);
+}
+
+.FollowProfile-Column{
+    width : 100%;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+
+.FollowProfile-ProfileImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.FollowProfile-ProfileImage img{    
+    width: 100px;
+    height: 100px;
+    text-align: center; 
+    top : 50%;
+}
+
+.FollowProfile-Column .FollowProfile-Info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top : 15px;
+    margin-left : 20px;
+    text-align: left;
+}
+
+
+.FollowProfile-Info{
+    width: 65%;
+}
+
+.FollowProfile-Info .Nickname{
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.FollowProfile-Info .Id{
+    color : rgb(180, 180, 180);
+    font-size: 15px;
+    margin-top: 3px;
+    margin-left : 10px;
+}
+
+.FollowProfile-Follow-Btn{
+    display: flex;
+    position: relative;
+    top : 13px;
+    cursor: pointer;
+    outline: none;
+} 
+
+.FollowProfile-Follow-Btn .Follow{
+    color: white;
+    background: rgb(82, 195, 181);
+    border : none;
+}
+
+.FollowProfile-Follow-Btn button{
+    width: 100%;
+    background: rgb(230, 230, 230);
+    color: rgb(100,100,100);
+    height: 30px;
+    border : none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}

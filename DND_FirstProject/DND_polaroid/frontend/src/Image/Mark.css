@@ -1,0 +1,123 @@
+.Mark-Modal-Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(100,100,100,0.16);
+}
+
+.Mark-Modal{
+    width: 320px;
+    height: 370px;
+    z-index: 9000;   /*div 의 창이 맨 앞으로 오게 ( 순서 1 )*/
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.16);
+    padding: 15px 5px;
+    position: absolute;
+    margin: 20px;
+}
+
+.Mark-Modal .Mark-Column{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.Mark-Title{
+    margin-left: 2px;
+    margin-top : 1px;
+}
+
+.Mark-Title-Display{
+    margin-top : 1px;
+    margin-bottom : -1px;
+}
+
+.Mark-Modal .Mark-Content{
+    margin: 0 auto;
+    color: none;
+    border : 1px solid rgb(180, 180, 180);
+    border-radius: 3px;
+    width: 250px;
+    height: 240px;
+}
+
+
+.Mark-Modal .Mark-Button-Wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin : 10px 30px 10px 0;
+}
+
+.Mark-Modal .Mark-Button-Wrap Button{
+    width: 70px;
+    height : 30px;
+    outline : none;
+    border-radius : 5px;
+    font-size : 13px;
+}
+
+
+.Mark-Modal .Mark-Button-Wrap .Mark-Button-Cancel{
+    background : none;
+    border : 1px solid rgb(200, 200, 200);
+}
+
+.Mark-Modal .Mark-Button-Wrap .Mark-Button-Confirm{
+    color: white;
+    background : rgb(82, 195, 181);
+    border : none;
+    margin-right : 8px;
+}
+
+
+.MarK-List{
+    height: 239px;
+    border-radius: 3px;
+    overflow: auto;
+}
+
+.Mark-Items{
+    height: 30px;
+    display: flex;
+    padding: 5px;
+}
+
+.X{
+    margin-left : 5px;
+    visibility:hidden;
+    cursor: pointer;
+    color: white;
+}
+
+.Mark-Items:hover .X{
+    visibility:visible; 
+}
+
+.Icon-Folder{
+    color : rgb(100,100,100);
+}
+
+.Mark-Items-Item{
+    display: flex;
+    justify-content: flex-start;
+    margin-left : 5px;
+    font-size : 12px;
+}
+
+.Mark-Items-Item-Title{
+    margin-right : 5px;
+}
+
+.Check-Mark {
+    color:white;
+    font-weight: 900;
+}
+
+.Check-Mark-Background{
+    background: rgb(200, 200, 200);
+}
+

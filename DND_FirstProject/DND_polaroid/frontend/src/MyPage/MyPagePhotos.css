@@ -1,0 +1,54 @@
+.MyPagePhotos{
+    width: 100%;
+}
+
+.MyPagePhotos-Grid{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+}
+
+.MyPagePhotos-Grid li{
+    overflow: hidden;
+    width : 32%;
+}
+
+.MyPagePhotos-photo{
+    width: 100%;
+}
+
+.MyPagePhotos-Grid-Delete{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.MyPagePhotos-Grid-Delete-Btn{
+    font-size: 50px !important;
+    position: absolute;
+    top: 20px;
+    visibility: hidden;
+    cursor: pointer;
+    color: rgb(100,100,100);
+}
+.MyPagePhotos-Grid-Delete:hover .MyPagePhotos-Grid-Delete-Btn{
+    visibility: visible;
+}
+
+
+@media screen and (max-width : 100%){
+    .Photos-Grid li{
+        width :32%;
+    }
+}
+
+@media screen and (max-width : 1006px){
+    .Photos-Grid li{
+        width : 48%;
+    }
+}
+
+@media screen and (max-width : 668px){
+    .Photos-Grid li{
+        width : 100%;
+    }
+}

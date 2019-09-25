@@ -1,0 +1,34 @@
+.MyPage-Menu-Tabs{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    list-style: none;
+
+    margin: auto 0;
+    padding: 0;
+}
+.MyPage-Menu-Tabs button{
+    width: 16.66%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    color: rgb(150, 150, 150);
+    background: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.MyPage-Menu-Tabs .MyPage-Menu-Selected{
+    color: rgb(82, 195, 181);
+    background: white;
+    font-size: 17px;
+    border: 1px solid rgb(200, 200, 200);
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    box-shadow: -1px -2px 3px rgb(200, 200, 200);
+    z-index: 3;
+}

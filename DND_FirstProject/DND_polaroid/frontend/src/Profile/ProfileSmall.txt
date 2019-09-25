@@ -1,0 +1,27 @@
+const profile = this.state.profile.map((profile) => {
+    return <ProfileSmall
+    profileImage = {profile.profileImage}
+    nickname = {profile.nickname}
+    id = {profile.id}
+    images = {profile.images}
+    follow = {profile.follow}
+    key = {profile.id}
+    />
+  })
+  return profile;
+
+
+
+_renderProfile = () =>{
+  const profile = this.state.profile.map((profile) => {
+    return <ProfileSmall
+    profileImage = {profile.profileImage}
+    nickname = {profile.nickname}
+    id = {profile.id}
+    images = {profile.images}
+    follow = {profile.follow}
+    key = {profile.id}
+    />
+  })
+  return profile;
+}

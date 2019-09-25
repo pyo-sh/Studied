@@ -1,0 +1,60 @@
+.Content-Top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top : 200px;
+}
+
+.Content-Top-Information{
+    width: 1220px;
+    top : 100px;
+    margin:auto;
+}
+
+.Content-Top-Information .Title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.Content-Top-Information .Explanation{
+    margin-top : 20px;
+    margin-left : 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(100,100,100);
+}
+
+.Content-Top-Result{
+    margin-top : 80px;
+    margin-left : 10px;
+    display : flex;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(100,100,100);
+}
+
+.Content-Top-Result .Result-Users{  
+    margin-left: 50px;
+}
+
+.Color{
+    color: rgb(82, 195, 181);
+}
+
+
+#content-top-category{
+    margin-top : 50px;
+}
+
+#content-top-search{
+    margin-top : 0;
+}
+
+.Search-User{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap : wrap; 
+}

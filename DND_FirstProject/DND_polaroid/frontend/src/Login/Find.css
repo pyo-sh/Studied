@@ -1,0 +1,70 @@
+.Find-Box{
+    position: relative;
+    top : 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Find-Box p{
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.Find-Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border : 1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px;
+}
+
+.Find-Font{
+    width: 320px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.Find-Form input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding : 5px;
+    padding-left : 15px;
+    width: 320px;
+    height: 40px;
+    border : 1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    outline : none;
+}
+
+.Find-Button{
+    text-align: center;
+    line-height: 39px;
+    font-size: 16px;
+    background-color: rgb(82, 195, 181);
+    color: white;  
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline : none;
+    margin-top: 10px;
+}
+
+.Go-Login{
+    margin-left: 10px;
+}
+
+a, a:hover{
+    text-decoration: none;  
+    color: lightslategray;
+}
