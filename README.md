@@ -4,6 +4,13 @@
 ### 목표는 꾸준히 하는 것.
 ### 열심히 해보자!
 
+## DND First Project
+### Visual Studio Code를 이용하면 편하다.
+### dnd_polo 파일과 frontend 파일 모두 npm install 이 필요하다.
+#### npm install -g yarn 을 통해 yarn 설치, yarn --version 으로 설치 완료인지 확인한다.
+### dnd_polo 파일은 nodemon server,  frontend 파일은 yarn start 가 필요하다.
+### -> 데이터 서버 설정이 필요하다 ! ( 추후 업데이트 예정 )
+
 # 커밋 메세지의 규칙
 ## 공부종류 : 공부했던 것의 내용
 ### ex) Java : 알고리즘 공부 등등...
