@@ -3,6 +3,12 @@
 ## 이 Repository는 저의 공부 내용을 남기는 목적으로 만들어 졌습니다.
 ### 목표 : 꾸준히, 열심히 하자
 
+## Visual Studio Code 부가 프로그램
+### Korean Language Pack : 한글 패치
+### Live Server
+### Prettier - Code formatter
+### Reactjs code snippets
+
 ## DND First Project
 ### Visual Studio Code를 이용하면 편하다.
 ### dnd_polo 파일과 frontend 파일 모두 npm install 이 필요하다.
@@ -19,4 +25,3 @@
 
 # 할 것
 ### Algorithm 파일 정리하기
-### 
