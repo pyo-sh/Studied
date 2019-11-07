@@ -8,10 +8,11 @@
 * Live Server : html 수정 시 브라우저 반영
 * Prettier - Code formatter
 * Reactjs code snippets
+* PowerMode : 입력할 때 재미있는것 ㅎㅎ
 
 ### 커밋 메세지의 규칙
 * 공부종류 : 공부했던 것의 내용
-* ex) Java : 알고리즘 공부 등등...
+ - ex) Java : 알고리즘 공부 등등...
 
 ### branch 관련 내용
 파일의 크기가 커지면 새로운 branch 작성을 고려할 것. (백업 관련)
