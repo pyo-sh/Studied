@@ -31,3 +31,37 @@ Scanner를 통해 입력을 받을경우 Space Enter를 모두 경계로 인식�
     변수이름.flush();           //남아있는 데이터를 모두 출력시킴
     변수이름.close();           //스트림을 닫음
     BufferedWriter는 버퍼를 잡아 놓았기 때문에 반드시 flush() / close() 를 반드시 호출해 주어 뒤처리를 해야한다. 또한 .write에는 System.out.println();과 같이 자동개행기능이 없어서 개행을 해주어야할 경우에는 \n를 통해 따로 처리해야한다.
+
+### 주요 Method
+
+메서드명 / 기능
+* BufferedReader(Reader rd)
+    - rd에 연결되는 문자입력 버퍼스트림 생성
+*   BufferedWriter(Writer wt) 
+    - wt에 연결되는 문자출력 버퍼스트림 생성​
+* int read()
+    - 스트림으로부터 한 문자를 읽어서 int 형으로 리턴
+* int read(char[] buf)
+    - 문자배열 buf의 크기만큼 문자를 읽어들임.  읽어들인 문자 수를 리턴
+* int read(char[] buf, int offset, int length)
+    - buf의 offset위치에서부터 length 길이만큼 문자를 스트림으로부터 읽어들임​
+* String readLine()
+    - 스트림으로부터 한 줄을 읽어 문자열로 리턴​​
+* void mark() 
+    - 현재우치를 마킹, 차 후 reset() 을 이용하여 마킹위치부터 시작함
+* void reset() 
+    - 마킹이 있으면 그 위치에서부터 다시시각, 그렇지 않으면 처음부터 다시시작
+* long skip(int n)
+    - n 개의 문자를 건너 뜀
+* void close()
+    - 스트림 닫음
+* void write(int c)
+    - int 형으로 문자 데이터를 출력문자스트림으로 출력
+* void write(String s, int offset, int length)
+    - 문자열 s를 offset 위치부터 length 길이만큼을 출력스트림으로 출력
+* void write(char[] buf, int offset, int length)
+    - 문자배열 buf의 offset 위치부터 length 길이만큼을 출력스트림으로 출력​​​
+* void newLine()
+    - 줄바꿈 문자열 출력
+* void flush() 
+    - 남아있는 데이터를 모두 출력시킴.
