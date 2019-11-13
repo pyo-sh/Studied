@@ -1,7 +1,13 @@
 # BufferedReader, BufferedWriter를 활용한 빠른 입출력
 Buffer에 있는 IO 클래스로서 입력된/출력할 데이터가 바로 전달되지 않고 중간에 버퍼링이 된 후에 전달되기에 시스템의 데이터처리 효율성을 높여주며 InputStreamReader / OutputStreamWriter 버퍼스트림을 사용하여 버퍼링을 하게 되면 입출력 스트림으로부터 미리 버퍼에 데이터를 갖다 놓기 때문에 보다 효율적인 입출력이 가능하다.
 
-### BufferedReader 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+### BufferedReader
 Scanner를 통해 입력을 받을경우 Space Enter를 모두 경계로 인식한다.
 하지만 그에비해 BufferedReader는 Enter만 경계로 인식하고 받은 데이터가 String으로 고정된다. 이 데이터를 사용할 때 Space를 고려해야 하지만 많은 양의 데이터를 입력받을경우 BufferedReader를 통해 입력받는 것이 효율적이다.
 
