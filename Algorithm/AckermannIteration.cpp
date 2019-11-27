@@ -1,6 +1,4 @@
 #include<stdio.h>
-// 아직 이해 못했음... 야 너두 할 수 있어
-// 이 함수를 생각만 해서 만들어보자..
 int Ackermann(int m, int n) {
 	int list[100000];
 	int esp = 0;
