@@ -11,5 +11,6 @@ public class N_2441{
                 System.out.printf("*");
             System.out.println();
         }
+        sc.close();
     }
 }
