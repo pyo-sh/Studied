@@ -12,5 +12,6 @@ public class N_1924{
         day += y;
         z = day % 7;
         System.out.println(week[z]);
+        sc.close();
     }
 }

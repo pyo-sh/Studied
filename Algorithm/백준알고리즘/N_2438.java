@@ -9,5 +9,6 @@ public class N_2438{
                 System.out.printf("*");
             System.out.println();
         }
+        sc.close();
     }
 }
