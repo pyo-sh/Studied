@@ -1,0 +1,217 @@
+n = 1
+
+n = "afs" # dictionary key value
+
+print(type(n)) // 변수의 타입을 알 수 있다. str 을 클래스로 만든것 같다.
+print(type(123))
+
+
+a = []
+s = {}
+
+a.append("zzz")
+a.append("sss")
+a.pop(0)
+# 그냥 리스트만으로 스택과 큐를 구현할 수 있다. 다만 조금 느리다
+# 스택은 뒤에가 top   append와 pop
+# 큐는 앞이 front 뒤가 rear append 와 pop(0)
+print(a)
+
+# dictionary 즉 사전. tkwjsdms dlseprtm
+# ㄱㄴㅁㄹ 같이 찾기 쉬운것이 key
+# zzz는 key / 123은 value
+s['zzz'] = 123
+s['123'] = 'zzz'
+
+# 키가 123인 아이를 가져온다.
+print(s.get(123))
+#key 순서대로 item들을 볼 수 있다.
+print(s.items())
+
+# 지우는 것
+s.clear()
+print(s)
+# 포문 이용법
+for a, b in s.items():
+    print("key : ", a, "value : ", b)
+
+# print 를 개행문자없이 쓰기
+print('zzzz', end = "")
+# default = print('zzzf', end="\n")
+
+a = 5
+b = 6
+if(a < b):
+    a,b = b,a
+print(a,b)
+
+li = [1,2,3]
+a,b,c = li
+print(a,b,c)
+
+# 튜플 - 리스트보다 빠르다
+# 빼거나 더할수 없다.
+s = (1,2,3)
+print(s[0])
+
+# 리스트 [] - 연결리스트 배열과 비슷함
+# 튜플 () - 리스트와 비슷한데 더하거나 빼기 불가능. 대신에 빠르다
+# 딕셔너리 {} - key / value
+# set - key 값만 있고 value 가 없다. 중복을 알아서 제거해 하나로 만든다.
+
+visit = set()
+visit.add(1)
+visit.add(2)
+print(visit)
+
+# 0부터 4까지의 for문
+for i in range(5):
+    print(i)
+
+# 5부터 0까지 -1씩 줄어든다
+for i in range(5,1,-1)
+    for j in range(4):
+        print(i*j)
+
+# 파이썬은 tab을 중심으로 어디 지역변수인지 판단
+
+aaa = [1,2,3,4,5]
+for i in range(len(aaa)):
+    print(aaa[i])
+for v in range(aaa):
+    print(v)
+
+# while 은 () 를 써도되고 안써도 된다.
+#while 1:
+    #print(1)
+
+# 조심해야할 문법
+a = 5
+print(10 if a==5 else 20)
+
+visit2 = set()
+visit2.add(1)
+visit2.add(2)
+visit2.add(3)
+
+# not in 은 없는것 만 출력
+# ! 는 없다. not을 쓴다.
+for i in range(10)
+    for(i not in visit)
+        print(i)
+
+# 뒤의 1비트를 & 시켰기에.
+if a&1 == 0: # a % 2 과 같다
+    print("짝수입니다.")
+else :
+    print("홀수입니다.")
+
+# 덱 구현 이 친구가 그냥 연결리스트 쓰는것보다 빠르다
+from collections import deque, defaultdict
+# defaultdict 는 딕셔너리를 만들 때 기본 값을 설정해주는 친구가
+q = deque()
+q.append(1)
+q.append(2)
+q.append(3)
+q.append(4)
+q.append(5)
+q.appendleft() # 앞쪽에 넣기
+q.pop()     # 스택
+q.popleft() # 큐
+
+print(q)
+
+# dic 안에 딕셔너리 key 와 value로 넣고 value를 set으로
+# dic = defaultdict(lambda:0) # 람다는 바로 실행되는 함수. 기본값이 0이다.
+dic2 = defaultdict(list)
+
+# list 로 하면 아래가 만들어진다.
+# key가 1 / value가 2
+dic2[2].append(2)
+dic2[2].append(3)
+if(not dic2.get(2)):
+    dic2[2] = []
+else:
+    dis2[2].append(2)
+
+print(dic2)
+
+
+
+# 정렬 - 보통은 정렬은 리스트에서 많이 쓴다.
+a=[1,5,4,3]
+a.sort()
+print(a)
+a.sort(reverse=True)
+print(a)
+
+b = [[1,2], [3,4], [0,1], [100,200]]
+b.sort() # x[0] 가 default
+b.sort( key = lambda x: (x[1], -x[0]), reverse = True ) # x[1] 을 기준으로 같으면 -x[0] 기준(reverse=False)
+print(b) # 정렬이 제대로 됏다... 앞의 아이를 기준으로
+
+# True False 는 맨앞에 대문자 해줘야함
+# && || 가 없다. and / or
+
+aaaaa = input() # input은 오소이 java의 Scanner
+print(aaaaa)
+
+# import sys 하면
+# sys.stdin
+# 편하게 쓰기
+# input = sys.stdin.readline # () 붙이면 값이 들어간다....
+# input이 덮어 씌워진다.
+from sys import stdin
+aaaa = stdin.readline()
+print(aaaa)
+
+# 길이는 k m    5 7
+# 혹은
+# 5
+# 7
+# input은 기본적으로 스트링을 받는다.
+k = int(input())
+m = int(input())
+print(k,m)
+
+k, m = map(int , input().split())
+lss = list(map(int , input().split(',')) # default = ' '
+# map 은 fuction을 받고 iterables를 받는다.
+# iterables(자료들을 뜻한다) 에 하나씩 fuction을 먹인다.
+
+# 1,2,3,4,5 를 받을 것이다.
+n = 5
+# 1
+# 2
+# 3
+# 4
+# 5
+# 첫번째 방법 append 느린거같다 뇌피셜
+l = []
+for i in range(5):
+    l.append(int(input()))
+print(l)
+# 두번째 방법
+l = [0 for _ in range(n)]
+# [0,0,0,0,0] 으로 초기화 하고 넣는다
+# 얼마나 넣을지 고정되어있으면 쓴다.
+# l = [i for i in range(n)]
+# l = 0,1,2,3,4 를 넣는다.
+for i in range():
+    l[i] = int(input())
+print(l)
+
+# 이분탐색 ?
+# 0 1 2 3 4 5 6 7
+# 5 를 찾고 싶을 때
+# 보통 앞에서 찾는다.
+# 보통 0 1 2 3 4 5
+
+# 이분 탐색 = 가운데부터 찾는다.
+# 계속 가운데 숫자를 찾는다. ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
+
+# 함수
+# def sol(a,b):
+#   return a+b
+
+
