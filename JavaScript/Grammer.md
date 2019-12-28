@@ -44,7 +44,8 @@ console.log(a)
 * Block 단위의 scope를 가진다.
 
 **var 함수**
-* 함수 호이스팅 (var s = 's' 가 함수 맨위의 var s 와 s = 's' 로 된다.)  상위 함수의 변수는 하위 함수의 변수와 상관이없다.
+* 함수 호이스팅 (var s = 's' 가 함수 맨위의 var s 와 s = 's' 로 된다.)
+* 상위 함수의 변수는 하위 함수의 변수와 상관이없다.
 ```
 var s = 'z';
 function ss () {
@@ -99,6 +100,7 @@ var obj = { a:1,b:2 }
 ```
 obj는 객체 obj의 주소 값을 확보, a와 b의 주소값도 확보한다.
 
+
 **Reference Type** : 주소를 참조
 ```
 var obj = { a:[1,2,3] }
@@ -136,6 +138,7 @@ console.log("sum 함수 ", sum(3,4));
 * sum 은 함수를 뜻한다
 * sum()은 함수의 결과값이다.(함수가 이미 실행됐다는 뜻)
 
+
 익명함수 : 이름이 없다
 ```
 const sum2 = function (a,b){
@@ -143,6 +146,7 @@ const sum2 = function (a,b){
 }
 console.log("sum2 함수 ", sum2(3,4));
 ```
+
 화살표(Arrow)함수
 * 화살표함수는 arguments 가 없다. console.log를 이용해 arguments를 출력하면 이상한 것이 출력된다.
 ```
@@ -152,6 +156,7 @@ const sum3 = (a, b) => {
 }
 console.log("sum3 함수 ", sum3(3,4));
 ```
+
 arguments를 쓰고싶다면?
 * 배열로 받는 방법 : 매개변수에 ...이름
 ```
@@ -162,16 +167,17 @@ const sum4 = (...args) => {
     args.forEach(value =>{
         sum += value
     })
-    /*
-    forEach는 아래의 포문과 같다.
-    for(i = 0; i < args.length(); i++){
-        sum += args[i];
-    }
-    */
     return sum;
 }
 console.log("sum4 함수 ", sum4(1,2,3,4,5,6,7,8,9,10));
 ```
+* 위의 forEach는 아래의 포문과 같다.
+```
+    for(i = 0; i < args.length(); i++){
+        sum += args[i];
+    }
+```
+
 매개 변수가 없을 때
 ```
 const Arrow = () => {
