@@ -1,9 +1,14 @@
-# Chronology
+# Things that Studied
+> 나의 공부를 적어보는 곳
+    > 목표 세우기
 
-### 주제가 없는 공부를 적어보는 곳
-* 목표 : 놓지만 말자
+### 커밋 메세지의 규칙
+> 공부종류 : 공부했던 것의 내용
+```
+Java : 알고리즘 공부
+```
 
-### Visual Studio Code에 대하여
+### Visual Studio Code의 추가 프로그램들
 * Korean Language Pack : 한글 패치
 * Live Server : html 수정 시 브라우저 반영
 * Prettier - Code formatter
@@ -22,21 +27,3 @@
         * 디버깅에 성공한 것을 볼 수 있다.
 * 
     * https://sourceforge.net/projects/mingw-w64/files/mingw-w64/ 에서 MinGW-W64-install.exe 다운로드
-    
-
-### 커밋 메세지의 규칙
-* 공부종류 : 공부했던 것의 내용
- - ex) Java : 알고리즘 공부 등등...
-
-### branch 관련 내용
-파일의 크기가 커지면 새로운 branch 작성을 고려할 것. (백업 관련)
-
-### 파일 관련 내용
-파일을 정리하자
-
-### 할 것
-* 알고리즘 공부하도록 하자
-* 시험공부 자료구조 repository 만들기 혹은 관련된 제목
-* Python 공부 정리해놓기
-* JavaScript 공부 정리하기
-* DevFestival 가서 공부한 것들 정리하기
