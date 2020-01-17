@@ -1,12 +1,6 @@
 # Things that Studied
-> 나의 공부를 적어보는 곳  
-    > 목표 세우기
-
-### 커밋 메세지의 규칙
-```
-<공부종류> : <공부했던 것의 내용>
-    Java : 알고리즘 공부
-```
+나의 공부를 적어보는 곳  
+> 목표 세우기
 
 ### Visual Studio Code의 추가 프로그램들
 * Korean Language Pack : 한글 패치
