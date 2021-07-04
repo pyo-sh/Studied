@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>엑셀</title>
+    </head>
+    <body>
+        <div class="get-value">
+            <div class="choose-standard">
+                <div class="choose-title">
+                    <h3>현재 분류 기준 단위</h3>
+                    <div id="choose-status" class="choose-status">속도 (단위 : 0.1)</div>
+                </div>
+                <div class="radios-wrapper">
+                    <div class="radio-wrapper">
+                        <input checked value="standard_speed" id="standard_2" name="standard" type="radio"/>
+                        <p>속도 (단위 : 0.1)</p>
+                    </div>
+                    <div class="radio-wrapper">
+                        <input value="standard_current" id="standard_3" name="standard" type="radio"/>
+                        <p>전류 (단위 : 1)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <strong class="input-title">전체 입력</strong>
+                <textarea class="input-textarea" id="csv-input" placeholder="복사 붙여넣기 해주세요"></textarea>
+            </div>
+            <div class="submit">
+                <button class="submit-button" id="submit-csv"> 확인 </button>
+            </div>
+        </div>
+        <div class="results-wrapper">
+            <div class="result-status" id="result-status"></div>
+            <div class="results">
+                <div class="results-header">
+                    <strong>결과 값</strong>
+                    <button id="clear-button">정리</button>
+                    <button id="copy-button"> 복사 </button>
+                </div>
+                <textarea class="results-value" id="result-value"></textarea>
+            </div>
+        </div>
+        <div id="result-copy"></div>
+    </body>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</html>
